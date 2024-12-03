@@ -29,10 +29,17 @@ The cases of protein sequences and text descriptions are in the ```data``` direc
 Description: FUNCTION: Component of the acetyl coenzyme A carboxylase complex. SUBCELLULAR LOCATION: Cytoplasm. SIMILARITY: Belongs to the AccA family.
 Sequence: MAVSDRKLQLLDFEKPLAELEDRIEQIRSLSEQNGVDVTDQIAQLEGRAEQLRQEIFSSLTPMQELQLARHPRRPSTLDYIHAISDEWMELHGDRRGYDDPAIVGGVGRIGGQPVLMLGHQKGRDTKDNVARNFGMPFPSGYRKAMRL...
 ```
+The generation codes below determine whether the process is guided solely by text or by a combination of text and sequence.
+```python
+seq=None,                                           # Only protein descriptions guide the generation process
+seq=tokenized_seqs['input_ids'][...,:1].to(device), # Both sequence fragments and descriptions guide the generation process
+```
+### Train your own model
+To be updated
 
 ## License <a name="license"></a>
 ### Code License
-The ProtDAT source codes are licensed under the MIT license.
+The ProtDAT source codes are licensed under the [MIT license](https://github.com/GXY0116/ProtDAT/blob/main/LICENSE).
 
 The ESM1b model can be found at [ESM1b](https://github.com/facebookresearch/esm), which is under the [MIT license](https://github.com/facebookresearch/esm/blob/main/LICENSE)
 
