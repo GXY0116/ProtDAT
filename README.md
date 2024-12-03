@@ -19,6 +19,7 @@ Finally, activate the virtual environment by :
 ```bash
 conda activate ProtDAT
 ```
+Before using the model, you need to download the ESM1b and PubMedBERT models locally and place them in the ```esm1b``` and ```pubmedbert``` subfolders within the ```model``` directory.
 
 ## Usage
 ### Generate protein sequences with protein descriptions (and protein sequence fragments)
@@ -41,7 +42,7 @@ To be updated
 ### Code License
 The ProtDAT source codes are licensed under the [MIT license](https://github.com/GXY0116/ProtDAT/blob/main/LICENSE).
 
-The ESM1b model can be found at [ESM1b](https://github.com/facebookresearch/esm), which is under the [MIT license](https://github.com/facebookresearch/esm/blob/main/LICENSE)
+The ESM1b model can be found at [ESM1b](https://huggingface.co/facebook/esm1b_t33_650M_UR50S) and , which is under the [MIT license](https://github.com/facebookresearch/esm/blob/main/LICENSE)
 
 The PubMedBERT model can be found at [PubMedBERT](https://huggingface.co/NeuML/pubmedbert-base-embeddings)
 ### Model Parameters License
