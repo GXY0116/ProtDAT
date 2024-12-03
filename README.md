@@ -25,7 +25,7 @@ conda activate ProtDAT
 Before using ProtDAT, there are several steps:
 
 1. Download the [ESM1b](https://huggingface.co/facebook/esm1b_t33_650M_UR50S) and [PubMedBERT](https://huggingface.co/NeuML/pubmedbert-base-embeddings) models and place them in the ```esm1b``` and ```pubmedbert``` subfolders within the ```model``` directory.
-2. Download ProtDAT model weight file [state_dict.pth]()
+2. Download ProtDAT model weight file [state_dict.pth](https://zenodo.org/records/14264096)
 
 
 ## Usage
@@ -54,4 +54,4 @@ You can build a custom protein text-sequence dataset with a specific pattern and
 
 ### Model Parameters License
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" /></a><br />
-The [ProtDAT parameters]() are made availabe under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
+The [ProtDAT parameters](https://zenodo.org/records/14264096) are made availabe under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
