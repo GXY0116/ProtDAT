@@ -1,6 +1,7 @@
 # ProtDAT
 A Unified Framework for Protein Sequence Design from Any Protein Text Description
 
+
 ## Preparation
 ProtDAT is implemented with Python3 (>=3.9), codes can be downloaded by :
 ```bash
@@ -19,7 +20,13 @@ Finally, activate the virtual environment by :
 ```bash
 conda activate ProtDAT
 ```
-Before using the model, you need to download the ESM1b and PubMedBERT models locally and place them in the ```esm1b``` and ```pubmedbert``` subfolders within the ```model``` directory.
+
+## Download models and files
+Before using ProtDAT, there are several steps:
+
+1. Download the [ESM1b](https://huggingface.co/facebook/esm1b_t33_650M_UR50S) and [PubMedBERT](https://huggingface.co/NeuML/pubmedbert-base-embeddings) models and place them in the ```esm1b``` and ```pubmedbert``` subfolders within the ```model``` directory.
+2. Download ProtDAT model weight file [new_best_checkpoint.pth]()
+
 
 ## Usage
 ### Generate protein sequences with protein descriptions (and protein sequence fragments)
@@ -35,16 +42,16 @@ The generation codes below determine whether the process is guided solely by tex
 seq=None,                                           # Only protein descriptions guide the generation process
 seq=tokenized_seqs['input_ids'][...,:1].to(device), # Both sequence fragments and descriptions guide the generation process
 ```
-### Train your own model
-To be updated
+### Train new model based on ProtDAT
+You can build a custom protein text-sequence dataset with a specific pattern and train it using the architecture in ```Decoder.py```.
+
 
 ## License <a name="license"></a>
 ### Code License
-The ProtDAT source codes are licensed under the [MIT license](https://github.com/GXY0116/ProtDAT/blob/main/LICENSE).
+1. The ProtDAT source codes are licensed under the [MIT license](https://github.com/GXY0116/ProtDAT/blob/main/LICENSE).
+2. The ESM1b model can be found at [ESM1b](https://github.com/facebookresearch/esm), which is under the [MIT license](https://github.com/facebookresearch/esm/blob/main/LICENSE)
+3. The PubMedBERT model can be found at [PubMedBERT](https://huggingface.co/NeuML/pubmedbert-base-embeddings/tree/main), which is under the [Apache License 2.0](https://choosealicense.com/licenses/apache-2.0/)
 
-The ESM1b model can be found at [ESM1b](https://huggingface.co/facebook/esm1b_t33_650M_UR50S) and , which is under the [MIT license](https://github.com/facebookresearch/esm/blob/main/LICENSE)
-
-The PubMedBERT model can be found at [PubMedBERT](https://huggingface.co/NeuML/pubmedbert-base-embeddings)
 ### Model Parameters License
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" /></a><br />
-The ProtDAT parameters are made availabe under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
+The [ProtDAT parameters]() are made availabe under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
