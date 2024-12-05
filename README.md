@@ -3,11 +3,7 @@ A Unified Framework for Protein Sequence Design from Any Protein Text Descriptio
 
 
 ## Preparation
-ProtDAT is implemented with Python3 (>=3.9), codes can be downloaded by :
-```bash
-git clone https://github.com/GXY0116/ProtDAT.git
-```
-We recommend you to use a virtual environment, such as Anaconda, to install the dependencies :
+ProtDAT is implemented with Python3 (>=3.9). We recommend you to use a virtual environment, such as Anaconda, to install the dependencies :
 ``` bash
 conda create -n ProtDAT python=3.9
 ```
