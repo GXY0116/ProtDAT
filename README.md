@@ -42,6 +42,18 @@ seq=tokenized_seqs['input_ids'][...,:1].to(device), # Both sequence fragments an
 You can build a custom protein text-sequence dataset with a specific pattern and train it using the architecture in ```Decoder.py```.
 
 
+## Citations
+If you find ProtDAT useful, cite the relevant paper:
+```bibtex
+@article{guo2024protdat,
+  title={ProtDAT: A Unified Framework for Protein Sequence Design from Any Protein Text Description},
+  author={Guo, Xiao-Yu and Li, Yi-Fan and Liu, Yuan and Pan, Xiaoyong and Shen, Hong-Bin},
+  journal={arXiv preprint arXiv:2412.04069},
+  year={2024}
+}
+```
+
+
 ## License <a name="license"></a>
 ### Code License
 1. The ProtDAT source codes are licensed under the [MIT license](https://github.com/GXY0116/ProtDAT/blob/main/LICENSE).
