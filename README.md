@@ -21,7 +21,7 @@ conda activate ProtDAT
 Before using ProtDAT, there are several steps:
 
 1. Download the [ESM1b](https://huggingface.co/facebook/esm1b_t33_650M_UR50S) and [PubMedBERT](https://huggingface.co/NeuML/pubmedbert-base-embeddings) models and place them in the ```esm1b``` and ```pubmedbert``` subfolders within the ```model``` directory.
-2. Download ProtDAT model weight file [state_dict.pth](https://zenodo.org/records/14264096)
+2. Download ProtDAT model weight file [state_dict.pth](https://zenodo.org/records/14264096) and [datasets](https://zenodo.org/records/14967237).
 
 
 ## Usage
