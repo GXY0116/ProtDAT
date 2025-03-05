@@ -56,7 +56,7 @@ If you find ProtDAT useful, cite the relevant paper:
 
 ## License <a name="license"></a>
 ### Code License
-1. The ProtDAT source codes are licensed under the [MIT license](https://github.com/GXY0116/ProtDAT/blob/main/LICENSE).
+1. The ProtDAT source codes are licensed under [CC BY-NC 4.0](https://github.com/GXY0116/ProtDAT/blob/main/LICENSE).
 2. The ESM1b model can be found at [ESM1b](https://github.com/facebookresearch/esm), which is under the [MIT license](https://github.com/facebookresearch/esm/blob/main/LICENSE)
 3. The PubMedBERT model can be found at [PubMedBERT](https://huggingface.co/NeuML/pubmedbert-base-embeddings/tree/main), which is under the [Apache License 2.0](https://choosealicense.com/licenses/apache-2.0/)
 
